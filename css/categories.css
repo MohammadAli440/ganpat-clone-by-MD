@@ -1,0 +1,118 @@
+
+/* ===================CATEGORIES=================== */
+.categoriess1 {
+  margin-top: 10rem;
+}
+
+.categories1 {
+    height: 32rem;
+    background: var(--color-bg);
+  }
+  
+  .container h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+  
+  .categories1__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  
+  .categories1__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  
+  .category1 {
+    background: var(--color-bg1);;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+  }
+  
+  .category1:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .category1:nth-child(2) .category__icon {
+    background: var(--color-danger);
+  }
+  
+  .category1:nth-child(3) .category__icon {
+    background: var(--color-success);
+  }
+  
+  .category1:nth-child(4) .category__icon {
+    background: var(--color-warning);
+  }
+  
+  .category1:nth-child(6) .category__icon {
+    background: var(--color-success);
+  }
+  
+  .category1__icon {
+    background: var(--color-primary);
+    padding: 1.7rem;
+    border-radius: 0.9rem;
+    color: var(--color-white-2);
+    font-size: 35px;
+  }
+  
+  .category1 h5 {
+    margin: 2rem 0 1rem;
+    font-size: 30px;
+  }
+  
+  .category1 p {
+    font-size: 0.85rem;
+  }
+  
+
+/* =================== MEDIA QUERIES (TABLES) ===================  */
+
+@media screen and (max-width: 1024px){
+
+  
+  /* =================== CATEGORIES ===================  */
+  .categoriess1 {
+    margin-top: 0;
+  }
+  .categories1 {
+    height: auto;
+  }
+
+  .categories1__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .categories1__left {
+    margin-right: 0;
+  }
+}
+
+
+/* =================== MEDIA QUERIES (PHONE) ===================  */
+@media screen and (max-width: 600px) {
+
+  
+  /* =================== CATEGORIES ===================  */
+  .categories1__right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .category1 {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .category1__icon {
+    margin-top: 4rem;
+    display: inline-block;
+  }
+
+}

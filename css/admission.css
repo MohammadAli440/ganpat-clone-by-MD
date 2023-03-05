@@ -1,0 +1,56 @@
+/* ===================ADMISSION=================== */
+.admission {
+  margin-top: 10rem;
+}
+
+.admission__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.admissions {
+  background: var(--color-bg);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.admissions:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.admission__info {
+  padding: 2rem;
+}
+
+.admission__info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+/* ============== MEDIA QUERIES (TABLETS) ============== */
+@media screen and (max-width: 1024px) {
+  .admission__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/* ============== MEDIA QUERIES (TABLETS) ============== */
+@media screen and (max-width: 600px) {
+  .admission__container {
+    grid-template-columns: 1fr ;
+    gap: 0.7;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .admission__container {
+    grid-template-columns: 1fr;
+    gap: 0.7;
+  }
+
+}
